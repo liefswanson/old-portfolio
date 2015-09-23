@@ -7,12 +7,21 @@ img {
 
 .title {
 	margin: .5rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 6.5rem;
 }
 
 
 
 .card {
-	background: pink;
+	background: #EEEEEE;
+	border-bottom-width: .2rem;
+	border-right-width: .2rem;
+	border-color: #888888;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	height: 7rem;
 }
 
 .container {
