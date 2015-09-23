@@ -1,0 +1,11 @@
+#*
+*.o
+*.pyc
+*~
+extern/
+node_modules/
+bower_components/
+/app/css/
+/app/js/
+tmp
+vendor/
