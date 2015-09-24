@@ -1,33 +1,44 @@
 @import "settings";
 @import "foundation";
 
+$header-height: 6rem;
+
+$card-height: 7rem;
+$card-color: #EEEEEE;
+$card-shadow: .4rem .4rem .1rem;
+$card-shadow-color: #888888;
+
+$edge-room: 1rem;
+
+// thumbs are square
+// $thumb-width: $card-height;
 .thumb {
-	height: 7rem;
+	height: $card-height;
 }
 
 .title {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 7rem;
+	height: $card-height;
 	margin: .5rem;
 }
 
 .card {
-	background: #EEEEEE;
-	height: 7rem;
-	box-shadow: .4rem .4rem .1rem #888888
+	background: $card-color;
+	height: $card-height;
+	box-shadow: $card-shadow $card-shadow-color
 }
 
 .container {
-	margin: 0 1rem 0 1rem;
+	margin: 0 $edge-room 0 $edge-room;
 }
 
 #cards {
-	position: absolute;
-	left: -20%;
+	position: relative;
+	// left: -20%;
+	top: $header-height;
 }
 
 #details {
 	position: absolute;
-	left: 80%;
+	// left: 80%;
+	top: $header-height;
 }
