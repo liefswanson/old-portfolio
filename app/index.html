@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,46 +11,10 @@
 		<div class="row">
 			
 		<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3 container">
-			<li>
+			<li ng-repeat="n in [0,1,2,3,4,5]">
 				<div class="card clearfix">
-					
-					<img class="thumb right" src="http://40.media.tumblr.com/4c9fa8dd32816cce17abb5c3d72ef644/tumblr_myhxyrQ1S91rv5rbvo1_1280.jpg"/>
-					<h5 class="title"> I did it again and again</h5>
-				</div>
-			</li>
-			<li>
-				<div class="card clearfix">
-					
-					<img class="thumb right" src="http://40.media.tumblr.com/4c9fa8dd32816cce17abb5c3d72ef644/tumblr_myhxyrQ1S91rv5rbvo1_1280.jpg"/>
-					<h4 class="title"> I did it again and again</h4>
-				</div>
-			</li>
-		  	<li>
-				<div class="card clearfix">
-					
-					<img class="thumb right" src="http://40.media.tumblr.com/4c9fa8dd32816cce17abb5c3d72ef644/tumblr_myhxyrQ1S91rv5rbvo1_1280.jpg"/>
-					<h4 class="title"> I did it again and again</h4>
-				</div>
-			</li>
-		  	<li>
-				<div class="card clearfix">
-					
-					<img class="thumb right" src="http://40.media.tumblr.com/4c9fa8dd32816cce17abb5c3d72ef644/tumblr_myhxyrQ1S91rv5rbvo1_1280.jpg"/>
-					<h4 class="title"> I did it again and again</h4>
-				</div>
-			</li>
-		  	<li>
-				<div class="card clearfix">
-					
-					<img class="thumb right" src="http://40.media.tumblr.com/4c9fa8dd32816cce17abb5c3d72ef644/tumblr_myhxyrQ1S91rv5rbvo1_1280.jpg"/>
-					<h4 class="title"> to derp or not to derp </h4>
-				</div>
-			</li>
-		  	<li>
-				<div class="card clearfix">
-					
-					<img class="thumb right" src="http://40.media.tumblr.com/4c9fa8dd32816cce17abb5c3d72ef644/tumblr_myhxyrQ1S91rv5rbvo1_1280.jpg"/>
-					<h4 class="title"> I did it again and again</h4>
+					<img class="thumb right" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400"/>
+					<h5 class="title">{{ n }}</h5>
 				</div>
 			</li>
 		</ul>
@@ -59,5 +23,7 @@
 	<script src="//localhost:35729/livereload.js"></script>
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="../bower_components/foundation/js/foundation.min.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+
 	<script src="js/app.js"></script>
 </html>
