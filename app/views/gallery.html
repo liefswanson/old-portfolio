@@ -1,6 +1,6 @@
 <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
 	<li ng-repeat="card in cards">
-		<a href="#/details/{{ card.id }}">
+		<a ng-href="#/details/{{ card.id }}">
 			<div class="card clearfix">
 				<img class="thumb right" src="{{ card.thumbUrl }}"/>
 				<h5 class="title">{{ card.title }}</h5>
