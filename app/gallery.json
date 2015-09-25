@@ -2,17 +2,35 @@
 	{
 		"id": "fruity-tetris",
 		"title": "Fruity Tetris: Food and Bricks collide",
-		"thumbUrl": "img/placeholder.png",
-		"detailsUrl": "details/fruity-tetris.json",
+		"thumbUrl": "img/thumbs/placeholder.png",
+		"detailsUrl": "details/placeholder.json",
 		"tags": [
 			
 		]
 	},
 	{
 		"id": "fruity-tetris-2",
-		"title": "Fruity Tetris II: \"The Reckoning\" (now in 3D) ",
-		"thumbUrl": "img/placeholder.png",
-		"detailsUrl": "details/fruity-tetris.json",
+		"title": "Fruity Tetris II: \"The Reckoning\" (now in 3D)",
+		"thumbUrl": "img/thumbs/placeholder.png",
+		"detailsUrl": "details/placeholder.json",
+		"tags": [
+			
+		]
+	},
+	{
+		"id": "tracing-rays",
+		"title": "Tracing Rays... All the Way Across the Sky",
+		"thumbUrl": "img/thumbs/placeholder.png",
+		"detailsUrl": "details/placeholder.json",
+		"tags": [
+			
+		]
+	},
+	{
+		"id": "hdr-exposed",
+		"title": "HDR: #Exposed",
+		"thumbUrl": "img/thumbs/placeholder.png",
+		"detailsUrl": "details/placeholder.json",
 		"tags": [
 			
 		]

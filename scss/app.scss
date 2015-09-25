@@ -28,17 +28,7 @@ $edge-room: 1rem;
 }
 
 .container {
-	margin: 0 $edge-room 0 $edge-room;
-}
-
-#cards {
 	position: relative;
-	// left: -20%;
 	top: $header-height;
-}
-
-#details {
-	position: absolute;
-	// left: 80%;
-	top: $header-height;
+	margin: 0 $edge-room 0 $edge-room;
 }

@@ -1,10 +1,8 @@
-<div id="cards">
-	<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3 container">
-		<li ng-repeat="card in cards">
-			<div class="card clearfix">
-				<img class="thumb right" src="{{ card.thumbUrl }}"/>
-				<h5 class="title">{{ card.title }}</h5>
-			</div>
-		</li>
-	</ul>
-</div>
+<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+	<li ng-repeat="card in cards">
+		<div class="card clearfix">
+			<img class="thumb right" src="{{ card.thumbUrl }}"/>
+			<h5 class="title">{{ card.title }}</h5>
+		</div>
+	</li>
+</ul>

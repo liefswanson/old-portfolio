@@ -22,4 +22,8 @@ declare module portfolio {
 	interface IDetailsScope extends ng.IScope {
 		details: portfolio.Details;
 	}
+
+	interface IDetailsRouteParams extends ng.route.IRouteParamsService {
+		cardId: string;
+	}
 }

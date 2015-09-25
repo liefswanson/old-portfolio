@@ -2,8 +2,6 @@
 /// <reference path="angularjs/angular-route.d.ts"/>
 /// <reference path="controllers.ts"/>
 
-'use strict'
-
 module portfolio {
 	'use strict';
 
@@ -15,6 +13,11 @@ module portfolio {
 				  <ng.route.IRoute> {
 					  templateUrl:'views/gallery.html',
 					  controller: controllers.GalleryCtrl
+				  })
+			.when('/details/:cardId',
+				  <ng.route.IRoute>{
+					  templateUrl:'views/details.html',
+					  controller: controllers.DetailsCtrl
 				  })
 			.otherwise(<ng.route.IRoute>{redirectTo:'/gallery'});
 	}])
