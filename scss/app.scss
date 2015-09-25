@@ -37,7 +37,7 @@ p {
 }
 
 .thumb {
-	height: $card-height;
+	height: 100%;
 }
 
 .title {
@@ -47,8 +47,11 @@ p {
 }
 
 .card, .title-holder {
+	height: $card-height;
 	background: $card-color;
 	box-shadow: $card-shadow $card-shadow-color;
+	overflow: hidden;
+	text-overflow: elipsis;
 }
 
 .card:hover {
@@ -67,13 +70,13 @@ p {
 
 @media #{$medium-only} {
 	.detail-title {
-		font-size: 2rem;
+		font-size: 2.2rem;
 	}
 }
 
 @media #{$small-only} {
 	.detail-title {
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 	}
 }
 
