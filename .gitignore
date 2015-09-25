@@ -1,5 +1,6 @@
-*.DS_Store
-/css/*
+/**/.directory
+/app/css/*
+/app/js/*
 /bower_components/*
 /node_modules/*
-/imgs/*
+

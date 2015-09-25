@@ -1,11 +1,6 @@
-#*
-*.o
-*.pyc
-*~
-extern/
-node_modules/
-bower_components/
-/app/css/
-/app/js/
-tmp
-vendor/
+/**/.directory
+/app/css/*
+/app/js/*
+/bower_components/*
+/node_modules/*
+

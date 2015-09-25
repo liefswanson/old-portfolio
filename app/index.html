@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app>
+<html class="no-js" lang="en" ng-app="portfolioApp">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,23 +7,26 @@
 		<link rel="stylesheet" href="css/app.css" />
 		<script src="../bower_components/modernizr/modernizr.js"></script>
 	</head>
-	<body>
+	<body ng-controller="CardListCtrl">
+		<div id="view-container">
 
-		<div id="cards" class="row">
-			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3 container">
-				<li ng-repeat="n in [0,1,2,3,4,5,6,7,8,9]">
-					<div class="card clearfix">
-						<img class="thumb right" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400"/>
-						<h5 class="title">{{ n }}</h5>
-					</div>
-				</li>
-			</ul>
+			<div id="cards">
+				<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3 container">
+					<li ng-repeat="card in cards">
+						<div class="card clearfix">
+							<img class="thumb right" src="{{ card.thumbUrl }}"/>
+							<h5 class="title">{{ card.title }}</h5>
+						</div>
+					</li>
+				</ul>
+			</div>
+	
 		</div>
-		
 	</body>
 	<script src="//localhost:35729/livereload.js"></script>
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="../bower_components/foundation/js/foundation.min.js"></script>
 	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-route/angular-route.min.js"></script>
 	<script src="js/app.js"></script>
 </html>
