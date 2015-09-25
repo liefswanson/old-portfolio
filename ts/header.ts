@@ -28,7 +28,6 @@ module HeaderTS {
 	};
 
 
-
 	var headerHeight = $(target).css('height');
 	var shown:  string = '0px';
 	var hidden: string = '-' + headerHeight;
@@ -87,5 +86,6 @@ module HeaderTS {
 		}
 	};
 
+	
 	$(document).ready(activate);
 }
