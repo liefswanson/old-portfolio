@@ -13,7 +13,8 @@ $thick:    700;
 $xthick:   800;
 $xxthick:  900;
 
-$header-height: 6rem;
+$header-height: 4rem; 
+$header-room: $header-height * 1.5;
 
 $card-height: 7rem;
 $card-color: #EEEEEE;
@@ -36,20 +37,21 @@ p {
 }
 
 .thumb {
-	height: $card-height;
+	height: 100%;
 }
 
 .title {
 	font-family: $main-font;
-	font-weight: $thick;
-	height: $card-height;
+	font-weight: $xthin;
 	margin: .5rem;
 }
 
-.card {
-	background: $card-color;
+.card, .title-holder {
 	height: $card-height;
-	box-shadow: $card-shadow $card-shadow-color
+	background: $card-color;
+	box-shadow: $card-shadow $card-shadow-color;
+	overflow: hidden;
+	text-overflow: elipsis;
 }
 
 .card:hover {
@@ -58,7 +60,7 @@ p {
 
 .container {
 	position: relative;
-	top: $header-height;
+	top: $header-room;
 	margin: 0 $edge-room 0 $edge-room;
 }
 
@@ -68,8 +70,17 @@ p {
 
 .content {
 	margin-top: 2rem;
+	p {
+		font-size: 1.3rem;
+	}
 }
 
 #header {
-	
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: $header-height;
+	width: 100%;
+	background: black;
+	z-index: 100;
 }

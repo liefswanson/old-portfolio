@@ -1,5 +1,6 @@
 {
 	"title": "Fruity Tetris: Food and Bricks Collide",
+	"thumbUrl": "img/thumbs/placeholder.png",
 	"body": [
 		"Fruit Tetris, is a modification of tetris where instead of elements being destroyed only when a row is full, they are also destroyed when there is three of a color in a row... Don’t ask me why, I just followed the spec. It isn’t all that fun, but it does mess the rather incompatible game mechanics of tetris and the game \"falling fruits\".",
 		"It is implemented entirely in C++ using OpenGL 4.  This was a class project, and is part of a series of three projects.",
