@@ -37,7 +37,7 @@ p {
 }
 
 .thumb {
-	height: 100%;
+	height: $card-height;
 }
 
 .title {
@@ -51,7 +51,6 @@ p {
 	background: $card-color;
 	box-shadow: $card-shadow $card-shadow-color;
 	overflow: hidden;
-	text-overflow: elipsis;
 }
 
 .card:hover {
