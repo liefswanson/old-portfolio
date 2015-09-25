@@ -2,7 +2,6 @@
 
 module HeaderTS {
 	// below are the only two lines you may need to change
-	// 
 	
 	// __________________________________________________________________________________________________________
 
@@ -65,7 +64,7 @@ module HeaderTS {
 			hiding = true;
 			$(target).animate(
 				{top: hidden},
-				duration
+				duration - duration * fractionOfHeight()
 			);
 		}
 	};
