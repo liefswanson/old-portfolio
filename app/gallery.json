@@ -2,7 +2,16 @@
 	{
 		"id": "fruity-tetris",
 		"title": "Fruity Tetris: Food and Bricks collide",
-		"thumbUrl": "img/fruity-tetris.thumb.png",
+		"thumbUrl": "img/placeholder.png",
+		"detailsUrl": "details/fruity-tetris.json",
+		"tags": [
+			
+		]
+	},
+	{
+		"id": "fruity-tetris-2",
+		"title": "Fruity Tetris II: \"The Reckoning\" (now in 3D) ",
+		"thumbUrl": "img/placeholder.png",
 		"detailsUrl": "details/fruity-tetris.json",
 		"tags": [
 			
