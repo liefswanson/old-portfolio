@@ -6,22 +6,13 @@ module portfolio.controllers {
 	'use strict';
 
 	export class GalleryCtrl {
-		public static $inject = ['$scope']
+		public static $inject = ['$scope', '$http']
 
-		constructor (private $scope: portfolio.IGalleryScope) {
-			$scope.cards = [
-				{
-					"id": "fruity-tetris",
-					"title": "Fruity Tetris: Food and Bricks collide",
-					"thumbUrl": "http://placehold.it/400",
-					"detailsUrl": "details/fruity-tetris.json",
-					"tags": [
-						
-					]
-				}
-			];
-
-			
+		constructor (private $scope: portfolio.IGalleryScope, $http: ng.IHttpService) {
+			$http.get('gallery.json').success(function(data: Card[]) {
+				$scope.cards = data;
+			});
 		}
+		
 	}
 }

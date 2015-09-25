@@ -13,7 +13,7 @@ module portfolio {
 		$routeProvider
 			.when('/gallery',
 				  <ng.route.IRoute> {
-					  templateUrl:'partials/gallery.html',
+					  templateUrl:'views/gallery.html',
 					  controller: controllers.GalleryCtrl
 				  })
 			.otherwise(<ng.route.IRoute>{redirectTo:'/gallery'});
