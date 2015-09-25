@@ -1,28 +1,21 @@
 /// <reference path="angularjs/angular.d.ts"/>
 /// <reference path="angularjs/angular-route.d.ts"/>
-var portfolioApp = angular.module('portfolioApp', []);
+/// <reference path="controllers.ts"/>
 
-portfolioApp.controller('CardListCtrl', function ($scope) {
-	$scope.cards = [
-		{
-			"id": "fruity-tetris",
-			"title": "Fruity Tetris: Food and Bricks collide",
-			"thumbUrl": "https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400",
-			"detailsUrl": "details/fruity-tetris.json",
-			"tags": [
-				
-			]
-		}
-	];	
-});
+'use strict'
 
-// module portfolio {
-// 	'use strict';
+module portfolio {
+	'use strict';
 
+	var portfolioApp = angular.module('portfolioApp', ['ngRoute']);
 
-// 	// portfolioApp.config([<any>'$routeProvider', ($route:ng.IRouteProvider)=>{
-// 	// 	$routeProvider
-// 	// 		.when('/gallery', <ng.IRoute>{templateUrl:'partials/gallery.html'})
-// 	// 		.otherwise(<ng.IRoute>{redirectTo:'/gallery'});
-// 	// }])
-// }
+	portfolioApp.config([<any>'$routeProvider', ($routeProvider: ng.route.IRouteProvider)=>{
+		$routeProvider
+			.when('/gallery',
+				  <ng.route.IRoute> {
+					  templateUrl:'partials/gallery.html',
+					  controller: controllers.GalleryCtrl
+				  })
+			.otherwise(<ng.route.IRoute>{redirectTo:'/gallery'});
+	}])
+}

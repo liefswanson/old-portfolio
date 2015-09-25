@@ -15,25 +15,11 @@ declare module portfolio {
 }
 
 declare module portfolio {
-	interface ICardListScope extends ng.IScope {
+	interface IGalleryScope extends ng.IScope {
 		cards: portfolio.Card[];
 	}
 	
-	interface ICardDetailsScope extends ng.IScope {
+	interface IDetailsScope extends ng.IScope {
 		details: portfolio.Details;
-	}
-}
-
-declare module phonecat.controllers {
-	class CardListCtrl {
-		private $scope;
-		static $inject: string[];
-		constructor($scope: portfolio.ICardListScope);
-	}
-	
-	class CardDetailCtrl {
-		private $scope;
-		static $inject: string[];
-		constructor($scope: portfolio.ICardDetailsScope);
 	}
 }

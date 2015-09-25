@@ -7,21 +7,8 @@
 		<link rel="stylesheet" href="css/app.css" />
 		<script src="../bower_components/modernizr/modernizr.js"></script>
 	</head>
-	<body ng-controller="CardListCtrl">
-		<div id="view-container">
-
-			<div id="cards">
-				<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3 container">
-					<li ng-repeat="card in cards">
-						<div class="card clearfix">
-							<img class="thumb right" src="{{ card.thumbUrl }}"/>
-							<h5 class="title">{{ card.title }}</h5>
-						</div>
-					</li>
-				</ul>
-			</div>
-	
-		</div>
+	<body>
+		<div ng-view class="row"></div>
 	</body>
 	<script src="//localhost:35729/livereload.js"></script>
 	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
