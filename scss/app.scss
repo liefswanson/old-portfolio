@@ -2,6 +2,8 @@
 @import "foundation";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900");
 
+@import "animations";
+
 $title-font: 'Source Sans Pro', sans-serif;
 $main-font: 'Source Sans Pro', sans-serif;
 
@@ -43,7 +45,7 @@ p {
 .title {
 	font-family: $main-font;
 	font-weight: $xthin;
-	margin: .5rem;
+	margin: 0 .5rem 0 .5rem;
 }
 
 .card, .title-holder {
@@ -58,18 +60,40 @@ p {
 }
 
 .detail-title {
-	margin: 1rem;
+	line-height: 100%;
+	margin: 0 1rem 0 1rem;
+	a {
+		position: relative;
+	}
 }
 
 @media #{$medium-only} {
 	.detail-title {
 		font-size: 2.2rem;
+		a {
+			top: -.3rem;
+			font-size: 1.5rem;
+		}
 	}
 }
 
 @media #{$small-only} {
 	.detail-title {
 		font-size: 1.4rem;
+		a {
+			top: -.2rem;
+			font-size: 1.1rem;
+		}
+	}
+}
+
+@media #{$large-up} {
+	.detail-title {
+		font-size: 3rem;
+		a {
+			top: -.5rem;
+			font-size: 1.8rem;
+		}
 	}
 }
 
@@ -84,14 +108,43 @@ p {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: $header-height;
 	width: 100%;
-	background: $card-secondary-color;
+	background: $card-color;
 	z-index: 100;
+	padding: 0 1rem 0 1rem;
 }
 
-body {
-	height: 100%;
+#name {
+	position: relative;
+	top: .5rem;
+	font-size: 2.5rem;
+	height: $header-height;
+}
+
+#nav {
+	position: relative;
+	top: 1.5rem;
+	font-size: 1.25rem;
+	font-weight: $reg;
+}
+
+#nav-button {
+	position: relative;
+	top: .25rem;
+	height: $header-height;
+}
+
+#search-box {
+	position: relative;
+	top: 1rem;
+	width: 10rem;
+	outline: none;
+    outline-style: none;
+	background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid white 1px;
 }
 
 .padding {
@@ -101,36 +154,4 @@ body {
 .container {
 	position: relative;
 	top: $header-room;
-}
-
-.frame {
-	position: absolute;
-	right: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.frame.ng-enter, .frame.ng-leave {
-    -webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.frame.ng-enter {
-    left: 100%;
-}
-
-.frame.ng-enter-active {
-    left: 0;
-}
-
-.frame.ng-leave {
-    left: 0;
-}
-
-.frame.ng-leave-active {
-    left: -100%;
 }

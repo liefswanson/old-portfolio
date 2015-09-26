@@ -2,10 +2,13 @@
 	<div class="padding">
 		<div class="title-holder clearfix">
 			<img class="thumb right" src="{{ details.thumbUrl }}" alt="" />
-			<h1 class="detail-title">{{ details.title }}</h1>
+			<h1 class="detail-title">{{ details.title }}
+				<br />
+				<a ng-if="details.url" ng-href="{{ details.url.href }}">{{ details.url.text }}</a>
+			</h1>
 		</div>
 		<div class="content">
-			<p ng-repeat="paragraph in details.body">{{ paragraph }}</p>
+			<p ng-repeat="paragraph in details.body">{{ paragraph.contents }}</p>
 		</div>
 	</div>
 </div>

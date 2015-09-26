@@ -8,8 +8,17 @@
 		<script src="../bower_components/modernizr/modernizr.js"></script>
 	</head>
 	<body>
-		<div id="header">
-			
+		<div id="header" class="clearfix">
+			<h1 id="name" class="left">
+				Lief Swanson
+			</h1>
+			<ul id="nav" class="show-for-medium-up inline-list right">
+				<li><a class="nav" href="#/gallery">Gallery</a></li>
+				<li><a class="nav" href="#/about">About</a></li>
+				<li><a class="nav" href="#/contact">Contact</a></li>
+				<li><a class="nav" href="#/resume">R&eacutesume</a></li>
+			</ul>
+			<img src="img/thumbs/placeholder.png" id="nav-button" class="show-for-small-only right"/>
 		</div>
 		<div class="container">
 			<div ng-view class="frame">

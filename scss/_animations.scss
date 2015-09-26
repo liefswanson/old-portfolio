@@ -1,0 +1,33 @@
+.frame {
+	position: absolute;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.frame.ng-enter, .frame.ng-leave {
+	$slide-time: 600ms;
+	$ease-curve: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+	-webkit-transition: $slide-time $ease-curve all;
+    -moz-transition: $slide-time $ease-curve all;
+    -ms-transition: $slide-time $ease-curve all;
+    -o-transition: $slide-time $ease-curve all;
+    transition: $slide-time $ease-curve all;
+}
+
+.frame.ng-enter {
+    left: 100%;
+}
+
+.frame.ng-enter-active {
+    left: 0;
+}
+
+.frame.ng-leave {
+    left: 0;
+}
+
+.frame.ng-leave-active {
+    left: -100%;
+}
