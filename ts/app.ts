@@ -5,7 +5,7 @@
 module portfolio {
 	'use strict';
 
-	var portfolioApp = angular.module('portfolioApp', ['ngRoute']);
+	var portfolioApp = angular.module('portfolioApp', ['ngRoute', 'ngAnimate']);
 
 	portfolioApp.config([<any>'$routeProvider', ($routeProvider: ng.route.IRouteProvider)=>{
 		$routeProvider

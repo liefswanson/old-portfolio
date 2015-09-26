@@ -1,7 +1,11 @@
-<div class="title-holder clearfix">
-	<img class="thumb right" src="{{ details.thumbUrl }}" alt="" />
-	<h1 class="detail-title">{{ details.title }}</h1>
-</div>
-<div class="content">
-	<p ng-repeat="paragraph in details.body">{{ paragraph }}</p>
+<div class="row">
+	<div class="padding">
+		<div class="title-holder clearfix">
+			<img class="thumb right" src="{{ details.thumbUrl }}" alt="" />
+			<h1 class="detail-title">{{ details.title }}</h1>
+		</div>
+		<div class="content">
+			<p ng-repeat="paragraph in details.body">{{ paragraph }}</p>
+		</div>
+	</div>
 </div>
