@@ -11,6 +11,10 @@ module HeaderTS {
 	// __________________________________________________________________________________________________________
 
 
+	var headerHeight = $(target).css('height');
+	var shown:  string = '0px';
+	var hidden: string = '-' + headerHeight;
+
 	var prevScrollPos = $(window).scrollTop();
 	var scrollPos = $(window).scrollTop();
 
@@ -27,11 +31,6 @@ module HeaderTS {
 	function scrollingDown(): boolean {
 		return scrollPos > prevScrollPos;
 	};
-
-
-	var headerHeight = $(target).css('height');
-	var shown:  string = '0px';
-	var hidden: string = '-' + headerHeight;
 
 	function fractionOfHeight(): number {
 		var numerator:   string = $(target).css('top').replace(/px/,"").replace(/-/,"");
