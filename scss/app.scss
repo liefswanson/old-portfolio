@@ -15,6 +15,7 @@ $thick:    700;
 $xthick:   800;
 $xxthick:  900;
 
+
 $header-height: 4rem; 
 $header-room: $header-height * 1.5;
 
@@ -114,6 +115,7 @@ p {
 	padding: 0 1rem 0 1rem;
 }
 
+
 #name {
 	position: relative;
 	top: .5rem;
@@ -121,30 +123,26 @@ p {
 	height: $header-height;
 }
 
+#name-small {
+	@extend  #name;
+	margin-bottom: 0;
+}
+
 #nav {
 	position: relative;
 	top: 1.5rem;
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	font-weight: $reg;
 }
 
-#nav-button {
-	position: relative;
-	top: .25rem;
-	height: $header-height;
-}
-
-#search-box {
-	position: relative;
-	top: 1rem;
-	width: 10rem;
-	outline: none;
-    outline-style: none;
-	background: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid white 1px;
+#nav-small {
+	@extend #nav;
+	text-align: left;
+	top: 0;
+	li {
+		margin-left: 0;
+		margin-right: .5rem;
+	}
 }
 
 .padding {
@@ -154,4 +152,7 @@ p {
 .container {
 	position: relative;
 	top: $header-room;
+	@media #{$small-only} {
+		top: $header-room + 2.2rem;
+	}
 }
