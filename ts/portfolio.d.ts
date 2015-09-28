@@ -20,7 +20,6 @@ declare module portfolio {
 	class Contact {
 		public email: string;
 		public github: string;
-		public floobits: string;
 		public flickr: string;
 	}
 }

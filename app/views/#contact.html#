@@ -11,9 +11,16 @@
 					<a href="{{info.github}}">github.</a>
 					Although, I don't think there is a messaging feature...
 				</p>
-				<p>
-					<a href="{{info.flickr}}">flickr</a>
+				<p>I have a
+					<a href="{{info.flickr}}">flickr,</a>
+					that is really good for putting stuff on and forgetting about it.
 				</p>
+				<p>
+					I in theory have a
+					<a href="google_plus">google+</a>
+					page. I really am trying to get in the habbit of using it...
+				</p>
+				<p></p>
 			</p>
 		</div>
 	</div>

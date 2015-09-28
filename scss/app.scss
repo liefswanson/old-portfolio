@@ -14,24 +14,31 @@ $thick:    700;
 $xthick:   800;
 $xxthick:  900;
 
-$header-color: #ecf0f1;
 $header-height: 4rem; 
 $header-room: $header-height * 1.5;
-
-$card-height: 7rem;
-$card-color: #ecf0f1;
-$card-secondary-color: #34495e;
-$card-shadow: .4rem .4rem .1rem;
-$card-shadow-color: #7f8c8d;
-
 $edge-room: 1rem;
 
-$link-color: #2980b9;
-$background-color: #bdc3c7; 
+$card-height: 7rem;
+$card-shadow: .4rem .4rem .1rem;
 
+$header-color: #EEEEEE;
+$header-text-color: black;
+
+$card-color: #DDDDDD;
+$card-text-color: black;
+
+$card-secondary-color: #34495e;
+$card-secordary-text-color: white;
+
+$card-shadow-color: #7f8c8d;
+
+$link-color: #9b50ba;
+$background-color: white; 
+
+$paragraph-color: black;
 
 a {
-	color: $link-color;
+	color: $primary-color;
 }
 
 
@@ -48,6 +55,7 @@ h1 {
 }
 
 p {
+	color: $paragraph-color;
 	font-family: $main-font;
 	font-weight: $thin;
 }
@@ -68,12 +76,15 @@ p {
 	background: $card-color;
 	box-shadow: $card-shadow $card-shadow-color;
 	overflow: hidden;
+	.title {
+		color: $card-text-color;
+	}
 }
 
 .card:hover {
 	background: $card-secondary-color;
 	.title {
-		color: #ecf0f1;
+		color: $card-secordary-text-color;
 		font-weight: $xthick;
 	}
 }
@@ -81,6 +92,7 @@ p {
 .detail-title {
 	line-height: 100%;
 	margin-left: 0.5rem;
+	color: $card-text-color;
 	a {
 		position: relative;
 	}
@@ -112,6 +124,7 @@ p {
 	box-shadow: $card-shadow $card-shadow-color;
 	padding: 0 $pad $pad $pad;
 	h1 {
+		color: $card-text-color;
 		line-height: 100%
 	}
 	
@@ -160,6 +173,7 @@ p {
 	top: .5rem;
 	font-size: 2.5rem;
 	height: $header-height;
+	color: $header-text-color;
 	float: left;
 	@media #{$small-only} {
 		margin-bottom: 0;
@@ -172,7 +186,7 @@ p {
 	top: 1.5rem;
 	font-size: 1.1rem;
 	font-family: $main-font;
-	font-weight: $xthin;
+	font-weight: $reg;
 	float: right;
 	@media #{$small-only} {
 		text-align: left;
