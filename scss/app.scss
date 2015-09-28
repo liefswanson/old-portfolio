@@ -14,33 +14,35 @@ $thick:    700;
 $xthick:   800;
 $xxthick:  900;
 
-$header-height: 4rem; 
+$header-height: 4rem;
 $header-room: $header-height * 1.5;
 $edge-room: 1rem;
 
 $card-height: 7rem;
 $card-shadow: .4rem .4rem .1rem;
 
-$header-color: #EEEEEE;
-$header-text-color: black;
+$header-color: #181C20;
+$header-text-color: #ECF3FA;
 
-$card-color: #DDDDDD;
+$card-color: #F1F3F4;
 $card-text-color: black;
 
-$card-secondary-color: #34495e;
-$card-secordary-text-color: white;
+$card-secondary-color: #181C20;
+$card-secondary-text-color: #ECF3FA;
 
 $card-shadow-color: #7f8c8d;
 
-$link-color: #9b50ba;
-$background-color: white; 
+$nav-link: #0FACFF;
+$nav-hover: #97DBFF;
+$link-color: #0A43B5;
+
+$background-color: white;
 
 $paragraph-color: black;
 
 a {
-	color: $primary-color;
+	color: $link-color;
 }
-
 
 
 body {
@@ -84,8 +86,7 @@ p {
 .card:hover {
 	background: $card-secondary-color;
 	.title {
-		color: $card-secordary-text-color;
-		font-weight: $xthick;
+		color: $card-secondary-text-color;
 	}
 }
 
@@ -127,15 +128,15 @@ p {
 		color: $card-text-color;
 		line-height: 100%
 	}
-	
+
 	p {
 		font-size: 1.2rem;
 	}
-	
+
 	p:first-child {
 		margin-top: 2rem;
 	}
-	
+
 	p:last-child {
 		margin-bottom: 0;
 	}
@@ -188,6 +189,12 @@ p {
 	font-family: $main-font;
 	font-weight: $reg;
 	float: right;
+	a {
+		color: $nav-link;
+	}
+	a:hover {
+		color: $nav-hover;
+	}
 	@media #{$small-only} {
 		text-align: left;
 		top: 0;
