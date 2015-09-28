@@ -4,7 +4,6 @@
 
 @import "animations";
 
-$title-font: 'Source Sans Pro', sans-serif;
 $main-font: 'Source Sans Pro', sans-serif;
 
 $xxthin:   200;
@@ -41,6 +40,7 @@ p {
 
 .thumb {
 	height: $card-height;
+	margin-left: 0.5rem;
 }
 
 .title {
@@ -62,19 +62,9 @@ p {
 
 .detail-title {
 	line-height: 100%;
-	margin: 0 1rem 0 1rem;
+	margin-left: 0.5rem;
 	a {
 		position: relative;
-	}
-}
-
-@media #{$medium-only} {
-	.detail-title {
-		font-size: 2.2rem;
-		a {
-			top: -.3rem;
-			font-size: 1.5rem;
-		}
 	}
 }
 
@@ -84,6 +74,16 @@ p {
 		a {
 			top: -.2rem;
 			font-size: 1.1rem;
+		}
+	}
+}
+
+@media #{$medium-only} {
+	.detail-title {
+		font-size: 2.2rem;
+		a {
+			top: -.3rem;
+			font-size: 1.5rem;
 		}
 	}
 }
@@ -101,11 +101,12 @@ p {
 .content {
 	margin-top: 2rem;
 	p {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 }
 
 #header {
+	@extend .clearfix;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -121,27 +122,28 @@ p {
 	top: .5rem;
 	font-size: 2.5rem;
 	height: $header-height;
-}
-
-#name-small {
-	@extend  #name;
-	margin-bottom: 0;
+	float: left;
+	@media #{$small-only} {
+		margin-bottom: 0;
+		float: none;
+	}
 }
 
 #nav {
 	position: relative;
 	top: 1.5rem;
 	font-size: 1.1rem;
-	font-weight: $reg;
-}
-
-#nav-small {
-	@extend #nav;
-	text-align: left;
-	top: 0;
-	li {
-		margin-left: 0;
-		margin-right: .5rem;
+	font-family: $main-font;
+	font-weight: $xthin;
+	float: right;
+	@media #{$small-only} {
+		text-align: left;
+		top: 0;
+		float: none;
+		li {
+			margin-left: 0;
+			margin-right: .5rem;
+		}
 	}
 }
 
