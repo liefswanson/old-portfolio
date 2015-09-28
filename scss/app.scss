@@ -14,17 +14,31 @@ $thick:    700;
 $xthick:   800;
 $xxthick:  900;
 
-
+$header-color: #ecf0f1;
 $header-height: 4rem; 
 $header-room: $header-height * 1.5;
 
 $card-height: 7rem;
-$card-color: #EEEEEE;
-$card-secondary-color: #CCCCCC;
+$card-color: #ecf0f1;
+$card-secondary-color: #34495e;
 $card-shadow: .4rem .4rem .1rem;
-$card-shadow-color: #888888;
+$card-shadow-color: #7f8c8d;
 
 $edge-room: 1rem;
+
+$link-color: #2980b9;
+$background-color: #bdc3c7; 
+
+
+a {
+	color: $link-color;
+}
+
+
+
+body {
+	background: $background-color;
+}
 
 // thumbs are square
 // $thumb-width: $card-height;
@@ -58,6 +72,10 @@ p {
 
 .card:hover {
 	background: $card-secondary-color;
+	.title {
+		color: #ecf0f1;
+		font-weight: $xthick;
+	}
 }
 
 .detail-title {
@@ -131,7 +149,7 @@ p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: $card-color;
+	background: $header-color;
 	z-index: 100;
 	padding: 0 1rem 0 1rem;
 }
