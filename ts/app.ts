@@ -14,6 +14,16 @@ module portfolio {
 					  templateUrl:'views/gallery.html',
 					  controller: controllers.GalleryCtrl
 				  })
+			.when('/about',
+				  <ng.route.IRoute> {
+					  templateUrl: 'views/about.html',
+					  controller: controllers.AboutCtrl
+				  })
+			.when('/contact',
+				  <ng.route.IRoute> {
+					  templateUrl: 'views/contact.html',
+					  controller: controllers.ContactCtrl
+				  })
 			.when('/details/:cardId',
 				  <ng.route.IRoute>{
 					  templateUrl:'views/details.html',

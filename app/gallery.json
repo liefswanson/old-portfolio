@@ -2,37 +2,67 @@
 	{
 		"id": "fruity-tetris",
 		"title": "Fruity Tetris: Food and Bricks collide",
-		"thumbUrl": "img/thumbs/placeholder.png",
-		"detailsUrl": "details/placeholder.json",
-		"tags": [
-			
-		]
+		"thumbUrl": "img/thumbs/fruity-tetris.png",
+		"detailsUrl": "details/fruity-tetris.json"
 	},
 	{
 		"id": "fruity-tetris-2",
-		"title": "Fruity Tetris II: \"The Reckoning\" (now in 3D)",
-		"thumbUrl": "img/thumbs/placeholder.png",
-		"detailsUrl": "details/placeholder.json",
-		"tags": [
-			
-		]
+		"title": "Fruity Tetris II: \"The Reckoning\" (Now in 3D!)",
+		"thumbUrl": "img/thumbs/fruity-tetris-2.png",
+		"detailsUrl": "details/fruity-tetris-2.json"
 	},
 	{
 		"id": "tracing-rays",
 		"title": "Tracing Rays... All the Way Across the Sky",
-		"thumbUrl": "img/thumbs/placeholder.png",
-		"detailsUrl": "details/placeholder.json",
-		"tags": [
-			
-		]
+		"thumbUrl": "img/thumbs/tracing-rays.png",
+		"detailsUrl": "details/tracing-rays.json"
 	},
 	{
 		"id": "hdr-exposed",
 		"title": "HDR: #Exposed",
-		"thumbUrl": "img/thumbs/placeholder.png",
-		"detailsUrl": "details/placeholder.json",
-		"tags": [
-			
-		]
+		"thumbUrl": "img/thumbs/hdr-exposed.png",
+		"detailsUrl": "details/hdr-exposed.json"
+	},
+	{
+	    "id": "two-three-tree-fourest",
+		"title": "Two Three Tree Fourest",
+		"thumbUrl": "img/thumbs/two-three-tree-fourest.png",
+		"detailsUrl": "details/two-three-tree-fourest.json"
+	},
+	{
+		"id": "follow-a-star",
+		"title": "When You Are Lost, Just Follow A-Star",
+		"thumbUrl": "img/thumbs/follow-a-star.png",
+		"detailsUrl": "details/follow-a-star.json"
+	},
+	{
+		"id": "s99",
+		"title": "I Got 99 Problems, But a Scala Ain't One",
+		"thumbUrl": "img/thumbs/s99.png",
+		"detailsUrl": "details/s99.json"   
+	},
+	{
+		"id": "project-euler",
+		"title": "Project Euler: Warning, Spoilers",
+		"thumbUrl": "img/thumbs/project-euler.png",
+		"detailsUrl": "details/project-euler.json"   
+	},
+	{
+		"id": "typogra-phi",
+		"title": "Typogra-phi",
+		"thumbUrl": "img/thumbs/typogra-phi.png",
+		"detailsUrl": "details/typogra-phi.json"   
+	},
+	{
+		"id": "camera-light-flickring",
+		"title": "Why is the Light On My Camera flickring?",
+		"thumbUrl": "img/thumbs/camera-light-flickring.jpg",
+		"detailsUrl": "details/camera-light-flickring.json"   
+	},
+	{
+		"id": "self-append-self",
+		"title": "self.append(self)",
+		"thumbUrl": "img/thumbs/self-append-self.png",
+		"detailsUrl": "details/self-append-self.json"   
 	}
 ]

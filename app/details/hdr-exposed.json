@@ -1,0 +1,42 @@
+{
+	"title": "HDR: #Exposed",
+	"thumbUrl": "img/thumbs/hdr-exposed.png",
+	"body": [
+		{
+			"contents": "Unfortunately I can’t post the code for this little project, as the professor never okayed it. However, I will show you some pretty pictures and tell you about the process.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "Essentially I took all the pixels from the three images, and summed each set of pixels with the weighting function I made up…  (0.5-x)*sqrt(-log(0.5-x)). After that I normalized the pixels.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "There isn’t anything special about the particular operations, I just knew more or less what I wanted to happen. The function had to be continuous, in order to reduce visual noise. Values further from approximately 50% brightness needed to have less weight; in theory, very dark and very light pixels have low information. The only downfall here is that the function’s derivative has a very high magnitude near the 50% brightness mark. I thought of ways to avoid this, but the only practical one I had was to try to compose a piecewise continuous function that didn’t go to 0. This problem can create stitches of visual noise in the output image.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "All in all though, I think this one turned out well, especially considering that I was only using 3 of the five images usually used in this set.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		}
+	]
+}

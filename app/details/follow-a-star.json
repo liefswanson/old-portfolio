@@ -1,0 +1,28 @@
+{
+	"title": "When You Are Lost, Just Follow A-Star",
+	"thumbUrl": "img/thumbs/follow-a-star.png",
+	"url": {
+		"href": "https://github.com/liefswanson/pathfinder",
+		"text": "view on github"
+	},
+	"body": [
+		{
+			"contents": "During a class I took in algorithms, we had to implement a version of A*. This turned out to be more straightforward than I had originally gathered. There is almost no change from a typical Dijkstra's algorithm.",
+			"pictures": [
+
+			]
+		},
+		{
+			"contents": "In the process I learned about a very simple, but also impressively effective tool for making estimates about the distance to a point. The usual euclidean distance is useful, but can be unrepresentative in many realistic situations where obstacles are concerned. Instead, one can use a nifty trick that takes advantage of the Pythagorean Theorem. This approach, known as landmarking, allows for a significantly lower margin of error in the best path estimates that A* uses to find a location. All that is required is some precomputation of the search space, via Dijkstra's algorithm. The only problem is that each landmark takes up as much memory as all the nodes in the graph, so having many of them is not all that practical in large search spaces.",
+			"pictures": [
+				
+			]
+		},
+		{
+			"contents": "I unfortunately have not had the time to implement a pathfinding algorithm that uses landmarking as of yet, but it is definitely on my list of to-dos.",
+			"pictures": [
+				
+			]
+		}
+	]
+}

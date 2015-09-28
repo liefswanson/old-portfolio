@@ -1,0 +1,46 @@
+{
+	"title": "Typogra-phi",
+	"thumbUrl": "img/thumbs/typogra-phi.png",
+	"url": {
+		"href": "https://github.com/liefswanson/phibonacci",
+		"text": "view on github"
+	},
+	"body": [
+		{
+			"contents": "I like to consider myself, quite possibly incorrectly, to be a bit of a polymath. As such, I take an interest in art and design as well as software. I found that there are few fonts that I actually like using when they are made sufficiently large. Mostly, this is due to tricks that typographers use in order to adjust for illusions that occur in common perception of text. For instance, the letter \"h\" is often taller than the letter \"t\", and rounded letters such as \"o\" are taller than their more sharply pointed counterparts, such as \"r\".",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "This can be a bit of a pain when the text becomes sufficiently large, as these minor tweaks become  blaringly obvious, and create chaos amidst a design. This goes doubly so if you are partial to minimalist designs; any discrepancy in the lining up of elements can create significant confusion.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "My solution, as is that of many a poor fool, was to make my own font that fit my needs better. This is a sure fire way to become addicted to typography…",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "While, at the time of writing this, my font is not finished, you can check out what I’ve done so far via the link under the title. The main concept is to adhere quite strictly to the golden ratio (phi), so everything is based on it, even the thickness from one weight to the next. You would be hard pressed to look anywhere in the font and not find an occurrence of the Fibonacci sequence.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		}
+	]
+}

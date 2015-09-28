@@ -1,0 +1,19 @@
+{
+	"title": "Two Three Tree Fourest",
+	"thumbUrl": "img/thumbs/two-three-tree-fourest.png",
+	"url": {
+		"href": "https://github.com/liefswanson/TwoThreeTree",
+		"text": "view on github"
+	},
+	"body": [
+		{
+			"contents": "I am not as stranger to balanced binary trees. Ages ago before I kept track of the things I make via github, I made a red black tree. It was really really buggy mind you, but I did make one. I found that keeping track of two three trees was actually a little bit more annoying than the specifics of red black trees… Most people do not agree.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		}
+	]
+}

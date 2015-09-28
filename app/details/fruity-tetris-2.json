@@ -1,0 +1,34 @@
+{
+	"title": "Fruity Tetris II: \"The Reckoning\" (Now in 3D!)",
+	"thumbUrl": "img/thumbs/fruity-tetris-2.png",
+	"url": {
+		"href": "https://github.com/liefswanson/3d-tetris",
+		"text": "view on github"
+	},
+	"body": [
+		{
+			"contents": "In this installment, we returned to our previous program. There are still fruits, but they no longer get destroyed… instead, an ominous arm drops the blocks anywhere on the canvas it chooses, and the camera can now move around the board, rendering a 3D perspective. This was mostly just an exercise in the use of Euler Angles in 3D. Which I wasn’t all that happy with. I would have preferred we tackled quaternions. I ended up having to do that on my own later.",
+			"pictures": [
+
+			]
+		},
+		{
+			"contents": "This game does not really end… There just comes a point where you can no longer place blocks. Once again, it wasn’t my decision, \"I just followed the spec, man\".",
+			"pictures": [
+				
+			]
+		},
+		{
+			"contents": "I also used GLFW for this, so make sure you have that if you want to build this.",
+			"pictures": [
+				
+			]
+		},
+		{
+			"contents": "Most of the implementations are the same as the previous Fruity Tetris, just extended to an additional dimension. However, I managed to make it so that I actually only stored one tile in memory and could still render the whole board by swapping out the shaders and moving the block around. This isn’t, strictly speaking, the right way to go about things, but it was fun...",
+			"pictures": [
+				
+			]
+		}
+	]
+}

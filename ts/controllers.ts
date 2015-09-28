@@ -17,6 +17,30 @@ module portfolio.controllers {
 		
 	}
 
+	export class AboutCtrl {
+		public static $inject = ['$scope', '$http']
+
+		constructor (private $scope: portfolio.IAboutScope,
+					 private $http: ng.IHttpService) {
+			$http.get('about.json').success(function(data: About) {
+				$scope.about = data;
+			});
+		}
+		
+	}
+
+	export class ContactCtrl {
+		public static $inject = ['$scope', '$http']
+
+		constructor (private $scope: portfolio.IContactScope,
+					 private $http: ng.IHttpService) {
+			$http.get('contact.json').success(function(data: Contact) {
+				$scope.info = data;
+			});
+		}
+		
+	}
+	
 	export class DetailsCtrl {
 		public static $inject = ['$scope', '$http', '$routeParams']
 

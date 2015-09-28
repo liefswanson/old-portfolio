@@ -1,0 +1,25 @@
+{
+	"title": "Tracing Rays... All the Way Across the Sky",
+	"thumbUrl": "img/thumbs/tracing-rays.png",
+	"url": {
+		"href": "https://github.com/liefswanson/raycast",
+		"text": "view on github"
+	},
+	"body": [
+		{
+			"contents": "As my graphics class rounded the last bend, we were given one last task, one almost as old as computer graphics itself: Make a ray tracer. Many equations were slaved over, many linear systems were solved, and many rays were traced. This is my final product. If I were to do it again, I would do it very differently. I did not actually use OpenGL at all for this project, and if I was to make another raytracer, I think I would have used a basic canvas to paint to instead of just saving to a file every time. Also, it would have been nice if I had the forethought to make the settings changeable without recompiling the program, but hey… live and learn."
+		},
+		{
+			"contents": "There were some very funny stages in the development in this program, and it taught me a fair deal about incremental development. At least, they are funny in retrospect."
+		},
+		{
+			"contents": "My first mistake was not trying to find a library to save the output image for me, because the bmp format might actually be the single most finicky thing I have ever had to deal with, and I have had to deal with WAV files before. (Did you know that 8-bit WAV files are unsigned, and 16-bit WAV files are signed? Ya, that is a thing that most forms of WAV documentation graciously gloss over because that is obviously not relevant to anyone that may want to interpret both.) My poorly-built and under-tested bmp output haunted me up until just before I managed to get global lighting working. I think I would have been better off exporting a tiff, or finding a library that did png."
+		},
+		{
+			"contents": "Then there was the issue of how I defined the view port. I decided it would be a good idea to start in the middle of the screen, instead of simply adjusting the \"look at\" vector to compensate. Humorously this resulted in rendering a quarter of the screen."
+		},
+		{
+			"contents": "I encourage you to dig around in the source, fiddle with settings, and make your own pretty pictures of shiny spheres on checkerboards. It isn't the most flexible raytracer out there, but at some point I do plan to go back through it and reimplement it. Probably in another language. C++ is good, but not much fun to write in."
+		}
+	]
+}

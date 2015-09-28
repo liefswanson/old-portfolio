@@ -3,14 +3,16 @@
 	"thumbUrl": "",
 	"url": {
 		"href": "",
-		"text": "",
+		"text": ""
 	},
 	"body": [
 		{
 			"contents": "",
 			"pictures": [
-				"url": "",
-				"caption": ""
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
 			]
 		}
 	]

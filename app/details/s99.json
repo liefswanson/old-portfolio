@@ -1,0 +1,28 @@
+{
+	"title": "I Got 99 Problems, But a Scala Ain't One",
+	"thumbUrl": "img/thumbs/s99.png",
+	"url": {
+		"href": "https://github.com/liefswanson/S99",
+		"text": "view on github"
+	},
+	"body": [
+		{
+			"contents": "Being the typical undirected information sponge I am, I decided to give Scala a try. I think it is always good to have options as to the tools that one can use when tackling any problem. Java is good, but it is by no means the only language running on the JVM.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "Scala seems to be in a state of constant change, as the community around it grows so quickly. As such, good resources aimed at practice can be difficult to come by. I tried going through the 99 Problems in Scala (a port of the famous 99 Problems in Lisp). I am slowly making my way through it. At the time of writing this I am at question 35. Though, I found the strongest teaching experience I have gained from this is when I run into questions where the answers are actually incorrect in current iterations of Scala. Ever since the addition of runtime reflection libraries in Scala, in order to circumvent type erasure, much has changed in valid Scala program structure.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		}
+	]
+}

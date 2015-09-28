@@ -1,0 +1,37 @@
+{
+	"title": "self.append(self)",
+	"thumbUrl": "img/thumbs/self-append-self.png",
+	"url": {
+		"href": "https://github.com/liefswanson/portfolio",
+		"text": "view on github"
+	},
+	"body": [
+		{
+			"contents": "In an act recurrence without a base case, I decided to include the very website you are currently viewing my resume on as a piece of my resume.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "Before starting this, I had never really put together a complete frontend of a website, other than for a few classes. However, at that time I knew far less about the ecosystem that exists in the web development community… seriously, there is something like 3 package managers I need to use on a regular basis...",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "So, what technologies did I teach myself during the making of this website? Angular, TypeScript, Foundation, SCSS, Grunt, and NPM & Bower. That is almost as much as when I taught myself Emacs, Make, and C all at the same time...",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		}
+	]
+}

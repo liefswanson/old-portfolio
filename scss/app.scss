@@ -66,36 +66,56 @@ p {
 	a {
 		position: relative;
 	}
-}
-
-@media #{$small-only} {
-	.detail-title {
+	@media #{$small-only} {
 		font-size: 1.4rem;
 		a {
 			top: -.2rem;
 			font-size: 1.1rem;
 		}
 	}
-}
-
-@media #{$medium-only} {
-	.detail-title {
+	@media #{$medium-only} {
 		font-size: 2.2rem;
 		a {
 			top: -.3rem;
 			font-size: 1.5rem;
 		}
 	}
-}
-
-@media #{$large-up} {
-	.detail-title {
+	@media #{$large-up} {
 		font-size: 3rem;
 		a {
 			top: -.5rem;
 			font-size: 1.8rem;
 		}
 	}
+}
+
+@mixin content-card($pad){
+	background: $card-color;
+	box-shadow: $card-shadow $card-shadow-color;
+	padding: 0 $pad $pad $pad;
+	h1 {
+		line-height: 100%
+	}
+	
+	p {
+		font-size: 1.2rem;
+	}
+	
+	p:first-child {
+		margin-top: 2rem;
+	}
+	
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.about {
+	@include content-card(0.5rem);
+}
+
+.contact {
+	@include content-card(0.5rem);
 }
 
 .content {

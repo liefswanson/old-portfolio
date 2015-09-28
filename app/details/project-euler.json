@@ -1,0 +1,28 @@
+{
+	"title": "Project Euler: Warning, Spoilers",
+	"thumbUrl": "img/thumbs/project-euler.png",
+	"url": {
+		"href": "https://github.com/liefswanson/projectEuler",
+		"text": "view on github"
+	},
+	"body": [
+		{
+			"contents": "For anyone that follows Project Euler, they will know that you are not supposed to share your answers, but I think that is somewhat silly. If a person opts into doing something and then cheats just so they can answer a question that no one will be judging them on, really no one loses anything. Except the person that lost their time copying and pasting a few lines of text.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		},
+		{
+			"contents": "I quite like having the huge database of questions available to me, and I like to pick up a new language at random, and try out a feature I don’t use enough while solving problems. Though, I will admit that I think whoever comes up with the questions over there really likes Haskell. Most of the answers are trivially expressed in little more than 5 lines of Haskell.",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		}
+	]
+}

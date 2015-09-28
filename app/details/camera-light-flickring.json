@@ -1,0 +1,19 @@
+{
+	"title": "Why is the Light On My Camera flickring?",
+	"thumbUrl": "img/thumbs/camera-light-flickring.png",
+	"url": {
+		"href": "https://www.flickr.com/photos/124866205@N05/",
+		"text": "view on flickr"
+	},
+	"body": [
+		{
+			"contents": "I decided to take a break from writing code for a semester, and instead took an easy class in photography for a summer. You should check out my flickr! Not much more to say here. Some of it is pretty great if I do say so myself (and I do).",
+			"pictures": [
+			    {
+				    "url": "",
+				    "caption": ""
+			    }
+			]
+		}
+	]
+}
